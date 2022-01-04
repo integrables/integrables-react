@@ -1,0 +1,29 @@
+"Create a reducer with redux toolkit": {
+  "prefix": "rcr",
+  "body": [
+    "import { createSlice, PayloadAction } from '@reduxjs/toolkit'",
+    "export interface ${name}ReducerState {",
+    "    data: Array<$type>",
+    "}",
+    "",
+    "export const ${name}InitialState : ${name}ReducerState = {",
+    "    data: []",
+    "};",
+    "",
+    "export const ${name}Slice = createSlice({",
+    "    name: '${name}',",
+    "    initialState: ${name}InitialState,",
+    "    reducers: {",
+    "       $action: (state, action: PayloadAction<$type>) => {",
+    "           //some code...",
+    "        }",
+    "    },",
+    "  })",
+    "",
+    "export const { $action } = ${name}Slice.actions;",
+    "",
+    "const ${name}Reducer = ${name}Slice.reducer;",
+    "export default ${name}Reducer;"
+  ],
+  "description": "Create a reducer with redux toolkit"
+}
