@@ -11,7 +11,7 @@ after creating the reducer add the reducer to the [root reducer](https://github.
 
 # import and user your store
 
-import the [store](https://github.com/integrables/integrables-react/blob/master/redux/setup/store/store.ts) into your applicatin
+import the [store](https://github.com/integrables/integrables-react/blob/master/redux/setup/store/store.ts) into your application
 
 # Hook into your state
 
